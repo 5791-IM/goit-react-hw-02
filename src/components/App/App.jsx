@@ -1,10 +1,9 @@
-import styles from "../App/App.css";
-
 import { useEffect, useState } from "react";
 import Description from "../Description/Description";
 import Options from "../Options/Options";
 import Feedback from "../Feedback/Feedback";
 import Notification from "../Notification/Notification";
+import styles from "./App.module.css";
 
 const initFeedback = {
   good: 0,
