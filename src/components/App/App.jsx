@@ -3,7 +3,7 @@ import Description from "../Description/Description";
 import Options from "../Options/Options";
 import Feedback from "../Feedback/Feedback";
 import Notification from "../Notification/Notification";
-import styles from "./App.module.css";
+import style from "./App.module.css";
 
 const initFeedback = {
   good: 0,
@@ -65,7 +65,7 @@ function App() {
       : 0;
 
   return (
-    <div className={styles.container}>
+    <div className={style.container}>
       <Description />
       <Options
         totalFeedback={totalFeedback}
