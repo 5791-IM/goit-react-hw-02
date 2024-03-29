@@ -3,7 +3,7 @@ import Description from "../Description/Description";
 import Options from "../Options/Options";
 import Feedback from "../Feedback/Feedback";
 import Notification from "../Notification/Notification";
-import style from "./App.module.css";
+import styles from "./App.module.css";
 
 const initFeedback = {
   good: 0,
@@ -60,12 +60,10 @@ function App() {
   );
 
   const positivFeedbackPercentage =
-    totalFeedback > 0
-      ? Math.round(((feedbacks.good + feedbacks.neutral) / totalFeedback) * 100)
-      : 0;
+    totalFeedback > 0 ? Math.round((feedbacks.good / totalFeedback) * 100) : 0;
 
   return (
-    <div className={style.container}>
+    <div className={styles.container}>
       <Description />
       <Options
         totalFeedback={totalFeedback}
